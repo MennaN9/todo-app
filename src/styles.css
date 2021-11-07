@@ -1,0 +1,21 @@
+
+.border-color {
+    border-left: 4px solid #fd7e14 ;
+    width: 340px;
+}
+.color{
+ color: #fd7e14;
+}
+.form-control{
+    width: 340px !important;
+}
+.all{
+    position: relative !important;
+    z-index: 1;
+}
+.icon-position{
+    position: absolute !important;
+    right: -8px;
+    top: -5px;
+    z-index: 2;
+}

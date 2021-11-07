@@ -1,0 +1,17 @@
+<div class="container py-5">
+  <div class="row py-5 d-flex  flex-column justify-content-center align-items-center">
+    <div class="col-md-5  bg-light py-5 d-flex  flex-column justify-content-center align-items-center">
+      <h1 class="color">{{title}}</h1>
+      <div class="all mt-2">
+          <input type="text" class="form-control" id="text" value="text" name="text" [(ngModel)]="text" placeholder="task..">
+          <i class="fas fa-plus-circle fa-3x icon-position" style="color:#fd7e14" (click)="addTodo()"></i>
+      </div>
+      <div class="border-color d-flex  justify-content-between  align-items-center bg-white mt-3 p-3" *ngFor="let todo of todos">
+        <span class="">{{todo.text}}</span>
+        <span class="icons">
+          <i class="far fa-trash-alt" (click)="deleteTodo(todo.text)"></i>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
